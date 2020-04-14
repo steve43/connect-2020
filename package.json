@@ -1,0 +1,23 @@
+{
+  "name": "connect",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/server.js",
+  "scripts": {
+    "start": "node ./lib/server.js",
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "chai": "^4.2.0",
+    "chai-openapi-response-validator": "^0.8.0",
+    "mocha": "^7.1.1"
+  }
+}

@@ -1,0 +1,34 @@
+openapi: 3.0.0
+info:
+  description: API for tracking your books
+  version: "1.0.0"
+  title: Book API
+paths:
+  /books:
+    get:
+      responses:
+        '200':
+          description: List books
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        title:
+                          type: string
+                          example: "Lord of the Rings"
+                      required:
+                        - title
+                      additionalProperties: false
+                required: ["items"]
+# Added by API Auto Mocking Plugin
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/smizell/connect-2020/1.0.0
+  - description: Test Server
+    url: http://localhost:3000
